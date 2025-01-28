@@ -1,0 +1,8 @@
+float32 t_left
+float64 pitch_current_left
+float64 pitch_target_left
+float64 motor_command_left
+float32 t_right
+float64 pitch_current_right
+float64 pitch_target_right
+float64 motor_command_right

@@ -1,0 +1,15 @@
+<launch>
+  <rosparam command="load" file="$(find weeblebot)/src/robot_info.yaml" />
+
+  <!-- Option: pending tuning sliders to publish pid commands -->
+
+  <group ns="robot_operate">
+    <node pkg="weeblebot" name="sensors_processing_node" type="sensors_processing.py" output='screen'/>
+    <node pkg="weeblebot" name="sensing_and_control_node" type="sensor_wheel_control_node.py"/>
+  </group>
+
+  <group ns="robot_control">
+    <node pkg="weeblebot" name="remote_control_node" type="remote_control.py" output='screen'/>
+  </group>
+  
+</launch>

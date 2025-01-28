@@ -1,0 +1,6 @@
+float32 t_left
+float32 v_current_left
+float32 v_target_left
+float32 t_right
+float32 v_current_right
+float32 v_target_right
